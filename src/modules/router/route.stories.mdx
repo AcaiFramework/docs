@@ -1,0 +1,129 @@
+import { Meta, Story, Canvas, ArgsTable } from "@storybook/addon-docs/blocks";
+
+<Meta
+	title="Modules/Router/Route"
+	parameters={{ previewTabs: { 'canvas': { hidden: true }}}}
+/>
+
+# Route component
+
+Is the part that is responsible for building the available routes, their file paths and extra options. It allows you to easily group, and use. It's intention is not to actually do the match, but to only build the routes for usage or cache.
+
+## Usage
+
+``` typescript
+import { route } from "@acai/router";
+
+route.group("/auth", () => {
+	route("/register", 	"register/path");
+	route("/login", 	"login/path");
+});
+
+// this returns an array with a list of all the routes, you can use that to cache them, or simply pass to the router so you can use it
+const routes = await route.build();
+```
+
+## Methods
+### route
+The simpliest way of adding routes to your list.
+
+|argument|required|type|description|
+|---|---|---|---|
+|path| `true` | `string` | The url path that this relates to. |
+|file path| `true` | `string` | The path used to find the file that is going to be loaded if this path is match. |
+|options| `false` | `object` | A list of optional data you can pass to the route, info that you may use to build for example middlewares, guards or other things. |
+
+### route.build
+Async method that returns a serializable array of routes available. You can also use syncBuild to skip the necessity of await, but be careful that this may slow down your process if you have too many routes.
+
+|argument|required|type|description|
+|---|---|---|---|
+|clear| `false` | `boolean` | Let's you clear the routes added to the routes method. In case you want to build them separately. Defaults to `true`. |
+
+
+### route.options
+A way to group options for routes inside of it's callbacks. They can be nested. All the other following methods are wrapping the route options.
+
+|argument|required|type|description|
+|---|---|---|---|
+|options| `true` | `object` | A list of optional data you can pass to the route, info that you may use to build for example middlewares, guards or other things. |
+|callback| `true` | `() => void` | A callback that will have the context of the options passed, so you don't have to repeat them in all of the routes. |
+
+#### Available used options
+We already add functionality for some of the keys used in the options object, here are them:
+
+|name|type|description|
+|---|---|---|
+|prefix|string|Will prefix all the paths with value.|
+|filePrefix|string|Will prefix all the file paths with value.|
+|sufix|string|Will sufix all the paths with value.|
+|fileSufix|string|Will sufix all the file paths with value.|
+
+
+### route.group
+Groups with a common prefix all the routes inside of it. Nesting is available.
+
+|argument|required|type|description|
+|---|---|---|---|
+|prefix| `true` | `string` | The url path prefix that it will bind the routes to. |
+|callback| `true` | `() => void` | A callback that will have the context of the options passed, so you don't have to repeat them in all of the routes. |
+|options| `true` | `object` | A list of optional data you can pass to the route, info that you may use to build for example middlewares, guards or other things. |
+
+## Examples
+
+### Grouping
+Grouping allows you to easily prefix routes without constructing the options object. They append themselves when nesting, so you don't have to repeat prefixes when inside of a group context.
+
+``` typescript
+route.group("/projects", () => {
+	route("/list", "projects/list");
+
+	route.group("/:id_project", () => {
+		route("/", 			"projects/info");
+		route("/members", 	"projects/members");
+	});
+});
+
+/**
+ * This will produce:
+ * 
+ * /projects/list
+ * /projects/:id_project
+ * /projects/:id_project/members
+ */
+```
+
+### Options
+For the following example, we have two unauthenticated routes and one that requires authentication. The route doesn't care if it's really authenticated, it's not it's job, it only passes the information that the actual application is going to use to determine if it required the auth middleware.
+
+``` typescript
+
+route("register", 	"auth/register");
+route("login", 		"auth/login");
+
+route.options({middleware: ["auth"]}, () => {
+	route("/info", "user/info");
+
+	/* Other authenticated routes */
+});
+```
+
+### Batching routes
+Isolating builds enables you to easily build them as separate bundles
+
+``` typescript
+
+route("register", "auth/register");
+
+console.log(await route.build());
+
+route("login", "auth/login");
+
+// thil will print only the login route
+console.log(await route.build(false));
+
+route("recover", "auth/recover");
+
+// thil will print the login and recover route
+console.log(await route.build());
+```

@@ -1,0 +1,16 @@
+import { Meta, Story, Canvas, ArgsTable } from "@storybook/addon-docs/blocks";
+
+<Meta
+	title="Modules/Router/Router"
+	parameters={{ previewTabs: { 'canvas': { hidden: true }}}}
+/>
+
+# Router component
+
+This will find the match of the current path given with a list of routes.
+
+|argument|required|type|description|
+|---|---|---|---|
+|path| `true` | `string` | The path that will be tested for a match with the current routes. |
+|routes| `true` | `string | route` | A list of routes to be matched against. You can also pass a route function, it will build the routes inside of it automatically. |
+|config| `false` | `object` | A list of optional configuration you can pass to filter, prepend or better process the routes. |
