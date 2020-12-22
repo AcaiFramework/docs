@@ -33,5 +33,5 @@ export default create({
 
   brandTitle: 'Açai Framework',
   brandUrl: 'https://github.com/AcaiFramework',
-  brandImage: 'https://camo.githubusercontent.com/90b8d17ae38b92a4d444e801d946ab9eaed0f4626ad5cbe265ffccc2c4a187c2/68747470733a2f2f6170692e61706f736f6674776f726b732e636f6d2f73746f726167652f696d6167652f6568526446497a36747169455258494431534958416575306d6d54424b4c6469784958734e6a39732e706e67',
+  brandImage: 'https://raw.githubusercontent.com/AcaiFramework/dev-doc/master/img/logo.png?token=AE5V27X57RG5EZLXGMGKUA274FFSO',
 });
