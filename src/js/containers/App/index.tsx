@@ -1,13 +1,14 @@
 // Packages
-import { h } from 'preact';
-import { useState } from "preact/hooks";
+import { h } from "preact";
 
 const App = () => {
-	const [count, setcount] = useState(0);
+	// -------------------------------------------------
+	// Render
+	// -------------------------------------------------
 
 	return (
-		<div>{count} <button onClick={() => setcount(count + 1)}>+</button></div>
+		<div>hi3</div>
 	);
-}
+};
 
 export default App;

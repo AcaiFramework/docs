@@ -1,5 +1,5 @@
 // Packages
-import { h, render } from 'preact';
+import { h, render } from "preact";
 
 // Containers
 import App from "./js/containers/App";

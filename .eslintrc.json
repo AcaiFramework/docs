@@ -1,0 +1,40 @@
+{
+	"settings": {
+		"react": {
+			"pragma": "h"
+		}
+	},
+	"env": {
+		"browser": true,
+		"es2021": true
+	},
+	"extends": [
+		"preact",
+		"eslint:recommended",
+		"plugin:preact/recommended",
+		"plugin:@typescript-eslint/recommended"
+	],
+	"parser": "@typescript-eslint/parser",
+	"parserOptions": {
+		"ecmaFeatures": {
+			"jsx": true
+		},
+		"ecmaVersion": 12,
+		"sourceType": "module"
+	},
+	"plugins": [
+		"preact",
+		"@typescript-eslint"
+	],
+	"rules": {
+		// eslint
+		"quotes": ["error", "double"],
+		"arrow-body-style": 0,
+
+		// typescript
+		"@typescript-eslint/explicit-module-boundary-types": 0,
+
+		// preact
+		"react/jsx-no-bind": 0
+	}
+}
