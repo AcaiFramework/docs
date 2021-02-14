@@ -1,4 +1,3 @@
-node_modules
+.snowpack
 build
-storybook-static
-yarn-error.log
+node_modules
