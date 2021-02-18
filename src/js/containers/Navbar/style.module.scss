@@ -3,7 +3,26 @@
 }
 
 .links {
-	position: fixed;
 	display: flex;
 	flex-direction: column;
+
+	padding-left: 20px;
+
+	a {
+		color: black;
+		text-decoration: none;
+		margin: 5px 0;
+	}
+
+	button {
+		margin: 0;
+		padding: 0;
+
+		text-align: left;
+	}
+
+	h5 {
+		margin: 0;
+		font-weight: bold;
+	}
 }

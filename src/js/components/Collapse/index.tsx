@@ -19,7 +19,10 @@ const Collapse = (props: CollapsePropsInterface) => {
 
 	return (
 		<div class={`${style.collapse} ${open ? style.open:""}`}>
-			<button class={style.toggle} onClick={() => setopen(!open)}><i class={`fa fa-chevron-${open ? "up":"down"}`} />{props.title}</button>
+			<button class={style.toggle} onClick={() => setopen(!open)}>
+				{props.title}
+				<i class={`ms-2 fa fa-chevron-${open ? "up":"down"}`} />
+			</button>
 			<div class={style.list}>
 				{props.children}
 			</div>

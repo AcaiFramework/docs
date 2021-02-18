@@ -1,10 +1,12 @@
 {
 	"START": "Getting started",
+	"EXCEPTIONS": "Exceptions",
 	"MODULES": "Modules",
 	"TESTER": "Tester",
 	"ROUTER": "Router",
 	"CONFIG": "Config",
 	"SERVER": "Server",
 	"QUERY": "Query",
-	"MODEL": "Model"
+	"MODEL": "Model",
+	"CREATED_BY": "This framework was created by APO Softworks and Nuinalp LTDA."
 }

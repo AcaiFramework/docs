@@ -29,6 +29,12 @@ const App = () => {
 					getComponent={() => import("../../views/docs/start/GettingStarted").then(module => module.default)}
 				/>
 
+				<AsyncRoute
+					path="/docs/:version/app/exceptions"
+					loading={Loading}
+					getComponent={() => import("../../views/docs/application/Exceptions").then(module => module.default)}
+				/>
+
 				<NotFound default />
 			</Router>
 		</useLocalization.Provider>
