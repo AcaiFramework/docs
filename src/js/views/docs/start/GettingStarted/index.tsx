@@ -34,13 +34,14 @@ const Home = () => {
 					<li>
 						app
 						<ul>
-							<li>exceptions</li>
 							<li>
 								controllers
 								<ul>
 									<li>http</li>
 								</ul>
 							</li>
+							<li>exceptions</li>
+							<li>middlewares</li>
 							<li>models</li>
 							<li>presenters</li>
 							<li>providers</li>

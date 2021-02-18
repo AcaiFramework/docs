@@ -34,6 +34,7 @@ const Navbar = (props: NavbarPropsInterface) => {
 				<div class={`${style.links} nav`}>
 					<Link href="/docs/x/getting-started">{_("START")}</Link>
 					<h5>Application</h5>
+					<Link href="/docs/x/app/controllers">{_("CONTROLLERS")}</Link>
 					<Link href="/docs/x/app/exceptions">{_("EXCEPTIONS")}</Link>
 					<Collapse title={_("MODULES")}>
 						<Link href="/docs/x/modules/tester">{_("TESTER")}</Link>

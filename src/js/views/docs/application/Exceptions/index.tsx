@@ -1,11 +1,11 @@
 // Containers
-import Highlight from "../../../../components/Highlight";
-import Navbar from "../../../../containers/Navbar";
+import Highlight	from "../../../../components/Highlight";
+import Navbar 		from "../../../../containers/Navbar";
 
 // Modules
 import useLocalization from "../../../../modules/Localization";
 
-const NotFound = () => {
+const Exceptions = () => {
 	// -------------------------------------------------
 	// Properties
 	// -------------------------------------------------
@@ -61,4 +61,4 @@ export default class ModelException extends CustomException {
 	);
 };
 
-export default NotFound;
+export default Exceptions;

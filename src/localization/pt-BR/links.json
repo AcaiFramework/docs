@@ -1,6 +1,7 @@
 {
 	"START": "Getting started",
 	"EXCEPTIONS": "Exceptions",
+	"CONTROLLERS": "Controllers",
 	"MODULES": "Modules",
 	"TESTER": "Tester",
 	"ROUTER": "Router",
