@@ -1,0 +1,10 @@
+{
+	"START": "Getting started",
+	"MODULES": "Modules",
+	"TESTER": "Tester",
+	"ROUTER": "Router",
+	"CONFIG": "Config",
+	"SERVER": "Server",
+	"QUERY": "Query",
+	"MODEL": "Model"
+}

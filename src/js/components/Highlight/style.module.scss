@@ -1,0 +1,15 @@
+.background {
+	background-color: rgb(46, 36, 56);
+
+	padding: 7px;
+
+	:global {
+		.hljs-keyword,.language-javascript {
+			color: white;
+		}
+
+		.hljs-title {
+			color:rgb(146, 71, 221);
+		}
+	}
+}

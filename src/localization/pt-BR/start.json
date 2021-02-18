@@ -1,0 +1,7 @@
+{
+	"GETTING_STARTED": "Getting started",
+	"DIRECTORY": "Directory structure",
+	"INTRODUCTION_01": "We are assuming that you are going to use our application boilerplate. But if you wish to build your own application from the ground up. You can checkout how to start each individual module in their respective tabs. So you can git clone our repository:",
+	"INTRODUCTION_02": "After cloning, you can run yarn/npm. Now you are going be presented with a simple project setup, with authentication and registration. There you can see usage of the query builder, model, config, all the base modules. Each part being easily removable or extendable. You can run the project by running `yarn start` on the console.",
+	"INTRODUCTION_03": "After cloning, you can run yarn/npm. Now you are going be presented with a simple project setup, with authentication and registration. There you can see usage of the query builder, model, config, all the base modules. Each part being easily removable or extendable. You can run the project by running `yarn start` on the console."
+}
