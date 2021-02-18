@@ -13,7 +13,7 @@ const useLocalization 		= (category?: string) => {
 		_(category).then(setkeys);
 	}, [_, category]);
 
-	return (key: string, defaultValue?: string) => (keys || {})[key] || defaultValue;
+	return (key: string, defaultValue?: string) => (keys || {})[key as keyof typeof keys] || defaultValue;
 };
 
 useLocalization.Provider 	= Component;

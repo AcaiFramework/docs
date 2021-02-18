@@ -1,10 +1,20 @@
+// Modules
+import useLocalization from "../../../modules/Localization";
+
 const Loading = () => {
+	// -------------------------------------------------
+	// Properties
+	// -------------------------------------------------
+
+	// hooks
+	const _ = useLocalization("general");
+	
 	// -------------------------------------------------
 	// Render
 	// -------------------------------------------------
 
 	return (
-		<div>Loading</div>
+		<div>{_("LOADING")}</div>
 	);
 };
 

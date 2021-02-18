@@ -29,12 +29,36 @@ const Home = () => {
 
 			<h3>{_("DIRECTORY")}</h3>
 
-			<Highlight language="javascript">
-				- app
-					- exceptions
-			</Highlight>
+			<div class="card mb-4">
+				<ul>
+					<li>
+						app
+						<ul>
+							<li>exceptions</li>
+							<li>
+								controllers
+								<ul>
+									<li>http</li>
+								</ul>
+							</li>
+							<li>models</li>
+							<li>presenters</li>
+							<li>providers</li>
+							<li>validators</li>
+							<li>views</li>
+						</ul>
+					</li>
+					<li>config</li>
+					<li>interfaces</li>
+					<li>routes</li>
+				</ul>
+			</div>
 
 			<p>{_("INTRODUCTION_03")}</p>
+
+			<p>{_("INTRODUCTION_04")}</p>
+
+			<div class="alert alert-primary">{_("INTRODUCTION_05")}</div>
 		</Navbar>
 	);
 };
