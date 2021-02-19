@@ -87,6 +87,63 @@ await User.query().where("name", "John").limit(5).orderBy("name", "DESC").get();
 			</Highlight>
 
 			<p>{_("TEXT_07")}</p>
+
+			<h3>{_("TITLE_05")}</h3>
+
+			<h5>boolean</h5>
+
+			<p>{_("TYPE_01")}</p>
+
+			<h5>date</h5>
+
+			<p>{_("TYPE_02")}</p>
+
+			<h5>float</h5>
+
+			<p>{_("TYPE_03")}</p>
+
+			<h5>int</h5>
+
+			<p>{_("TYPE_04")}</p>
+
+			<h5>string</h5>
+
+			<p>{_("TYPE_05")}</p>
+
+			<h3>{_("TITLE_06")}</h3>
+
+			<p>{_("TEXT_08")}</p>
+
+			<Highlight language="typescript">
+{`
+import { typeManager } from "@acai/model";
+
+typeManager.add("customTypeName", {
+	// database type
+	type: {
+		type: "string",
+		length: 15,
+	},
+
+	// ${_("COMMENT_01")}
+	onCreate: (value: unknown, row: Record<string, unknown>, params?: string[]) => {
+		return /* sanitized value */;
+	},
+	// ${_("COMMENT_02")}
+	onSave: (value: unknown, row: Record<string, unknown>, params?: string[]) => {
+		return /* sanitized value */;
+	},
+	// ${_("COMMENT_03")}
+	onRetrieve: (value: unknown, row: Record<string, unknown>, params?: string[]) => {
+		return /* sanitized value */;
+	},
+	// ${_("COMMENT_04")}
+	onSerialize: (value: unknown, row: Record<string, unknown>, params?: string[]) => {
+		return /* sanitized value */;
+	},
+});
+`}
+			</Highlight>
 		</Navbar>
 	);
 };

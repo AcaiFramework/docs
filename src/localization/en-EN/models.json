@@ -10,5 +10,17 @@
 	"TEXT_05": "More than just a wrap of data, the model class provides tons of helpful methods for retrieving, saving, deleting, etc your data. It internally uses the `@acai/query` package for all transactions with the database.",
 	"TITLE_04": "CRUD operations with models",
 	"TEXT_06": "Similar to the query builder, the model has a bind that automatically bundles the received data as a model and other quality of life methods, you can checkout below:",
-	"TEXT_07": "As you can see, you easily have access to a bunch of CRUD operations, and if you ever need to refine your query, you can directly call the `.query()` method, that will bind the table and primary key to the query builder, making it easy to have total freedom over the query built. And it returns the data formatted into the model. An interesting detail is that if you retrieve a model from the database, it will trigger the update method on save, if you created it or cloned it, it will trigger the insert method call internally."
+	"TEXT_07": "As you can see, you easily have access to a bunch of CRUD operations, and if you ever need to refine your query, you can directly call the `.query()` method, that will bind the table and primary key to the query builder, making it easy to have total freedom over the query built. And it returns the data formatted into the model. An interesting detail is that if you retrieve a model from the database, it will trigger the update method on save, if you created it or cloned it, it will trigger the insert method call internally.",
+	"TITLE_05": "Available dynamic types",
+	"TYPE_01": "Stored in the database as a small integer, it is them converted when working with the view.",
+	"TYPE_02": "Equivalent to the date SQL field, it unserializes into a luxon DateTime object for usage",
+	"TYPE_03": "Parses into and from float",
+	"TYPE_04": "Parses into and from int",
+	"TYPE_05": "Forces serialization into string",
+	"TITLE_06": "Add your own dynamic types",
+	"TEXT_08": "In cases of more specific needs, you can add your own types, here is an example of how you could do that:",
+	"COMMENT_01": "When setting a field value into the model",
+	"COMMENT_02": "From model to database (model.save())",
+	"COMMENT_03": "From database to model",
+	"COMMENT_04": "From model to JS object (model.toObject())"
 }
