@@ -2,6 +2,7 @@
 	"START": "Getting started",
 	"EXCEPTIONS": "Exceptions",
 	"CONTROLLERS": "Controllers",
+	"MIDDLEWARES": "Middlewares",
 	"MODULES": "Modules",
 	"TESTER": "Tester",
 	"ROUTER": "Router",
