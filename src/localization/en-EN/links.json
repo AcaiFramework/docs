@@ -1,8 +1,10 @@
 {
 	"START": "Getting started",
+	"APPLICATION": "Application",
 	"EXCEPTIONS": "Exceptions",
 	"CONTROLLERS": "Controllers",
 	"MIDDLEWARES": "Middlewares",
+	"MODELS": "Models",
 	"MODULES": "Modules",
 	"TESTER": "Tester",
 	"ROUTER": "Router",

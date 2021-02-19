@@ -15,7 +15,7 @@ const App = () => {
 	// -------------------------------------------------
 
 	return (
-		<useLocalization.Provider>
+		<useLocalization.Provider language="en-EN">
 			<Router static>
 				<AsyncRoute
 					path="/"
@@ -45,6 +45,12 @@ const App = () => {
 					path="/docs/:version/app/middlewares"
 					loading={Loading}
 					getComponent={() => import("../../views/docs/application/Middlewares").then(module => module.default)}
+				/>
+
+				<AsyncRoute
+					path="/docs/:version/app/models"
+					loading={Loading}
+					getComponent={() => import("../../views/docs/application/Models").then(module => module.default)}
 				/>
 
 				<NotFound default />
