@@ -6,6 +6,7 @@
 	"MIDDLEWARES": "Middlewares",
 	"MODELS": "Models",
 	"PRESENTERS": "Presenters",
+	"PROVIDERS": "Providers",
 	"MODULES": "Modules",
 	"TESTER": "Tester",
 	"ROUTER": "Router",
