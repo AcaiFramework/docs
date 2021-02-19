@@ -7,6 +7,7 @@
 	"MODELS": "Models",
 	"PRESENTERS": "Presenters",
 	"PROVIDERS": "Providers",
+	"VALIDATORS": "Validators",
 	"MODULES": "Modules",
 	"TESTER": "Tester",
 	"ROUTER": "Router",

@@ -65,6 +65,12 @@ const App = () => {
 					getComponent={() => import("../../views/docs/application/Providers").then(module => module.default)}
 				/>
 
+				<AsyncRoute
+					path="/docs/:version/app/validators"
+					loading={Loading}
+					getComponent={() => import("../../views/docs/application/Validators").then(module => module.default)}
+				/>
+
 				<NotFound default />
 			</Router>
 		</useLocalization.Provider>
