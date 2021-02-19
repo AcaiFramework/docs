@@ -17,6 +17,5 @@
 	"COMMENT_01": "Validation to check if value should pass",
 	"COMMENT_02": "your validation here",
 	"COMMENT_03": "Message to be returned in case of validation error",
-	"TEXT_05": "All rules are stored globally by the validator package, meaning you can overwrite any vanilla rules by just passing another rule with the same name. You can also get the current rules by importing { rules } that is a method that returns it as a list. `setRule` as seen above, `setRules` to set multiple rules at the same time. And `clearRules` to clear all the rules so you can start slate clean. You can add those rules with a provider or by adding a config file for it.",
-	"":""
+	"TEXT_05": "All rules are stored globally by the validator package, meaning you can overwrite any vanilla rules by just passing another rule with the same name. You can also get the current rules by importing { rules } that is a method that returns it as a list. `setRule` as seen above, `setRules` to set multiple rules at the same time. And `clearRules` to clear all the rules so you can start slate clean. You can add those rules with a provider or by adding a config file for it."
 }
