@@ -5,6 +5,7 @@
 	"CONTROLLERS": "Controllers",
 	"MIDDLEWARES": "Middlewares",
 	"MODELS": "Models",
+	"PRESENTERS": "Presenters",
 	"MODULES": "Modules",
 	"TESTER": "Tester",
 	"ROUTER": "Router",

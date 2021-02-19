@@ -25,12 +25,12 @@ const Exceptions = () => {
 
 			<Highlight language="typescript">
 {`
-import { response }		from "@acai/server";
+import { response }			from "@acai/server";
 import { CustomException } 	from "@acai/utils";
 
 export default class ModelException extends CustomException {
 	public constructor (model, id) {
-		this.model	= model;
+		this.model		= model;
 		this.primaryKey	= id;
 
 		super("modelNotFound", \`Model \${this.model.name} of primary key \${this.primaryKey} not found\`);
