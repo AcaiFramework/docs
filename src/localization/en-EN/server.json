@@ -28,6 +28,5 @@
 	"TITLE_05": "Responses",
 	"TEXT_06": "We provide you with a response utility method that can help you import files, return request status codes, etc. Remember that the server smart guesses from the response you are giving, turning json into actual json and etc.",
 	"COMMENT_15": "Return this to the server to load a file from the project root",
-	"COMMENT_16": "Change the response status code",
-	"": ""
+	"COMMENT_16": "Change the response status code"
 }
