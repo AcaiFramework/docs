@@ -48,7 +48,6 @@ const Navbar = (props: NavbarPropsInterface) => {
 						<Link href="/docs/x/modules/config">{_("CONFIG")}</Link>
 						<Link href="/docs/x/modules/server">{_("SERVER")}</Link>
 						<Link href="/docs/x/modules/query">{_("QUERY")}</Link>
-						<Link href="/docs/x/modules/model">{_("MODEL")}</Link>
 					</Collapse>
 				</div>
 

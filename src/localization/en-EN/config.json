@@ -11,6 +11,5 @@
 	"TITLE_02": "Optional envs",
 	"TEXT_03": "By default, config will try to fetch from `.env`, but you can pass a preset to try. If not found, it will alert on the console and try to fetch .env instead.",
 	"COMMENT_06": "will fetch env from .env.testing",
-	"COMMENT_07": "will fetch env from .env.production",
-	"": ""
+	"COMMENT_07": "will fetch env from .env.production"
 }
