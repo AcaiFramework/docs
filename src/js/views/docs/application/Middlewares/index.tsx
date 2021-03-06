@@ -1,6 +1,6 @@
 // Containers
 import Highlight	from "../../../../components/Highlight";
-import Navbar 		from "../../../../containers/Navbar";
+import Sidebar 		from "../../../../containers/Sidebar";
 
 // Modules
 import useLocalization from "../../../../modules/Localization";
@@ -18,7 +18,8 @@ const Middlewares = () => {
 	// -------------------------------------------------
 
 	return (
-		<Navbar title={_("MIDDLEWARES")}>
+		<>
+			<h1>{_("MIDDLEWARES")}</h1>
 			<p>{_("TEXT_01")}</p>
 
 			<Highlight language="typescript">
@@ -78,7 +79,7 @@ export default async function GenericMiddleware (request: AppRequest, next) {
 }
 `}
 			</Highlight>
-		</Navbar>
+		</>
 	);
 };
 

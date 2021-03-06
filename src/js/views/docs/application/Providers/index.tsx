@@ -1,6 +1,6 @@
 // Containers
 import Highlight	from "../../../../components/Highlight";
-import Navbar 		from "../../../../containers/Navbar";
+import Sidebar 		from "../../../../containers/Sidebar";
 
 // Modules
 import useLocalization from "../../../../modules/Localization";
@@ -18,7 +18,8 @@ const Providers = () => {
 	// -------------------------------------------------
 
 	return (
-		<Navbar title={_("PROVIDERS")}>
+		<>
+			<h1>{_("PROVIDERS")}</h1>
 
 			<p>{_("TEXT_01")}</p>
 
@@ -66,7 +67,7 @@ export default class DatabaseProvider {
 			</Highlight>
 
 			<p>{_("TEXT_03")}</p>
-		</Navbar>
+		</>
 	);
 };
 

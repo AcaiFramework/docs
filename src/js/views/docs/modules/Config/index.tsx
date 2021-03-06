@@ -1,6 +1,6 @@
 // Containers
 import Highlight	from "../../../../components/Highlight";
-import Navbar 		from "../../../../containers/Navbar";
+import Sidebar 		from "../../../../containers/Sidebar";
 
 // Modules
 import useLocalization from "../../../../modules/Localization";
@@ -18,7 +18,8 @@ const Config = () => {
 	// -------------------------------------------------
 
 	return (
-		<Navbar title={_("CONFIG")}>
+		<>
+			<h1>{_("CONFIG")}</h1>
 
 			<p>{_("TEXT_01")}</p>
 
@@ -59,7 +60,7 @@ config.fetchEnv("testing");
 config.fetchEnv("production");
 `}
 			</Highlight>
-		</Navbar>
+		</>
 	);
 };
 

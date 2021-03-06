@@ -1,5 +1,5 @@
 // Containers
-import Navbar from "../../../../containers/Navbar";
+import Sidebar from "../../../../containers/Sidebar";
 
 // Modules
 import useLocalization from "../../../../modules/Localization";
@@ -20,7 +20,8 @@ const Home = () => {
 	// -------------------------------------------------
 
 	return (
-		<Navbar title={_("GETTING_STARTED")}>
+		<>
+			<h1>{_("GETTING_STARTED")}</h1>
 			<p>{_("INTRODUCTION_01")}</p>
 
 			<Highlight language="javascript">git clone https://github.com/AcaiFramework/application.git</Highlight>
@@ -60,7 +61,7 @@ const Home = () => {
 			<p>{_("INTRODUCTION_04")}</p>
 
 			<div class="alert alert-primary">{_("INTRODUCTION_05")}</div>
-		</Navbar>
+		</>
 	);
 };
 

@@ -1,6 +1,6 @@
 // Containers
 import Highlight	from "../../../../components/Highlight";
-import Navbar 		from "../../../../containers/Navbar";
+import Sidebar 		from "../../../../containers/Sidebar";
 
 // Modules
 import useLocalization from "../../../../modules/Localization";
@@ -18,7 +18,8 @@ const Validators = () => {
 	// -------------------------------------------------
 
 	return (
-		<Navbar title={_("VALIDATORS")}>
+		<>
+			<h1>{_("VALIDATORS")}</h1>
 
 			<p>{_("TEXT_01")}</p>
 
@@ -123,7 +124,7 @@ addRule("password", {
 			</Highlight>
 
 			<p>{_("TEXT_05")}</p>
-		</Navbar>
+		</>
 	);
 };
 

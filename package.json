@@ -12,6 +12,7 @@
     "highlight.js": "^10.6.0",
     "preact": "^10.5.9",
     "preact-async-route": "^2.2.1",
+    "preact-custom-scrollbars": "^4.0.4",
     "preact-router": "^3.2.1"
   },
   "devDependencies": {

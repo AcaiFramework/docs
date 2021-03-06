@@ -1,0 +1,8 @@
+{
+	"ABOUT": "About",
+	"TEXT_01": "Açaí was born from the principle that everything should be easy, even programming. So our main goal was to make a simple framework that was easy to use, but did not sacrifice good practices, perfomance nor organization. You can have everything at your hand and exchange each and every part easily. But you may ask yourself right now, where this weird name I never heard of before?",
+	"TITLE_01": "Where the name Açaí comes from?",
+	"TEXT_02": "Açaí is a typical fruit in Brazil that carn turn into a wonderful blend that brings tourists all over the world for it. It's pronounced /assai/ and it comes from a brailizian native language called tupi-guarani, and means \"fruit that cries\". But why we would ever choose such a name for this? First of all, it tastes wonderfully, second thing is that the original team responsible for creating this framework, are proud brazilians that want to share and spread our culture over the world. Third, we hopefully hope to integrate our alphabet into the web standard, since most of the places will require us to write acai.",
+	"TITLE_02": "The team",
+	"TEXT_03": "Initially composed of Rafael Correa (main architect) and Patrick A Lima (designer and tester), initially had no intention on creating an entire framework for creating backends, but the lack of a easy and stable one quickly made it become a sideproject, but what would come of it would be way greater than what they initially thought, so now they worked hard to bring this entire solution to the public."
+}

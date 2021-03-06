@@ -1,6 +1,9 @@
 // Modules
 import useLocalization from "../../../modules/Localization";
 
+// Component
+import style from "./style.module.scss";
+
 const Loading = () => {
 	// -------------------------------------------------
 	// Properties
@@ -14,7 +17,7 @@ const Loading = () => {
 	// -------------------------------------------------
 
 	return (
-		<div>{_("LOADING")}</div>
+		<div class={style.container}>{_("LOADING")}</div>
 	);
 };
 

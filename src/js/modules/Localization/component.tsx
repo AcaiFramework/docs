@@ -36,7 +36,7 @@ const Localization = ({ children, language }: Props) => {
 				});
 		},
 		[currentlang]
-	)
+	);
 
 	// -------------------------------------------------
 	// Render

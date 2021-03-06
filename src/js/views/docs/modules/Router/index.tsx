@@ -1,6 +1,6 @@
 // Containers
 import Highlight	from "../../../../components/Highlight";
-import Navbar 		from "../../../../containers/Navbar";
+import Sidebar 		from "../../../../containers/Sidebar";
 
 // Modules
 import useLocalization from "../../../../modules/Localization";
@@ -18,7 +18,8 @@ const Router = () => {
 	// -------------------------------------------------
 
 	return (
-		<Navbar title={_("ROUTER")}>
+		<>
+			<h1>{_("ROUTER")}</h1>
 
 			<h3>{_("TITLE_01")}</h3>
 
@@ -93,7 +94,7 @@ route.options({middleware: ["auth", "admin"]}, () => {
 });
 `}
 			</Highlight>
-		</Navbar>
+		</>
 	);
 };
 

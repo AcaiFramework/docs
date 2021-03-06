@@ -1,6 +1,5 @@
 // Containers
 import Highlight	from "../../../../components/Highlight";
-import Navbar 		from "../../../../containers/Navbar";
 
 // Modules
 import useLocalization from "../../../../modules/Localization";
@@ -18,7 +17,8 @@ const Controllers = () => {
 	// -------------------------------------------------
 
 	return (
-		<Navbar title={_("CONTROLLERS")}>
+		<>
+			<h1>{_("CONTROLLERS")}</h1>
 			<p>{_("TEXT_01")}</p>
 
 			<Highlight language="typescript">
@@ -76,7 +76,7 @@ export default (req: AppRequest) => {
 }
 `}
 			</Highlight>
-		</Navbar>
+		</>
 	);
 };
 

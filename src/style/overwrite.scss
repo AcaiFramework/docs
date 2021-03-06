@@ -1,4 +1,39 @@
+// -------------------------------------------------
+// Tipography
+// -------------------------------------------------
+
 p {
 	text-align: justify;
 	text-indent: 2rem;
+}
+
+h1 {
+	color: var(--bs-primary);
+}
+
+// -------------------------------------------------
+// Colors
+// -------------------------------------------------
+
+#app {
+	background: rgb(235,236,240);
+	background: radial-gradient(circle, rgba(235,236,240,1) 0%, rgba(218,216,221,1) 100%);
+}
+
+:root {
+	--bs-primary: #8033BC;
+	--bs-secondary: #92CB0D;
+}
+
+.primary, .primary * {
+	color: var(--bs-primary) !important;
+}
+
+// -------------------------------------------------
+// Buttons
+// -------------------------------------------------
+
+.btn-primary {
+	background-color: var(--bs-primary);
+	border-color: var(--bs-primary);
 }

@@ -1,6 +1,6 @@
 // Containers
 import Highlight	from "../../../../components/Highlight";
-import Navbar 		from "../../../../containers/Navbar";
+import Sidebar 		from "../../../../containers/Sidebar";
 
 // Modules
 import useLocalization from "../../../../modules/Localization";
@@ -18,7 +18,8 @@ const Server = () => {
 	// -------------------------------------------------
 
 	return (
-		<Navbar title={_("SERVER")}>
+		<>
+			<h1>{_("SERVER")}</h1>
 
 			<div class="alert alert-primary">{_("COMMENT_01")}</div>
 
@@ -143,7 +144,7 @@ response().view("./views/index.html");
 response().status(201).data({});
 `}
 			</Highlight>
-		</Navbar>
+		</>
 	);
 };
 

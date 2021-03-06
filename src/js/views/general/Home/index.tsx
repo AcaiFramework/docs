@@ -4,6 +4,9 @@ import { Link } 	from "preact-router";
 // Modules
 import useLocalization from "../../../modules/Localization";
 
+// Component
+import style from "./style.module.scss";
+
 const Home = () => {
 	// -------------------------------------------------
 	// Properties
@@ -18,13 +21,16 @@ const Home = () => {
 
 	return (
 		<>
-			<div class="container">
-				<h1 class="text-center mt-5">Açaí Framework</h1>
+			<div class={`container ${style.container}`}>
+				<div class="row">
+					<div class={`col-md-6 ${style.left}`}>
+						<h1 class="text-center">{_("TITLE")}</h1>
 
-				<p>{_("SHORT_DESCRIPTION")}</p>
-
-				<div class="col-md-2 offset-md-5 pt-5">
-					<Link class="btn btn-primary col-12" href="/docs/x/getting-started"><i class="fa fa-trash" />{_("GETTING_STARTED")}</Link>
+						<p>{_("SHORT_DESCRIPTION")}</p>
+					</div>
+					<div class={`col-md-6 ${style.right}`}>
+						<Link class="btn btn-primary" href="/docs/x/getting-started">{_("GETTING_STARTED")}</Link>
+					</div>
 				</div>
 			</div>
 

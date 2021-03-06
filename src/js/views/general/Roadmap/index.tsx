@@ -1,27 +1,28 @@
-// Containers
-import Sidebar 		from "../../../../containers/Sidebar";
+// Packages
+import { Link } 	from "preact-router";
 
 // Modules
-import useLocalization from "../../../../modules/Localization";
+import useLocalization from "../../../modules/Localization";
 
-const Views = () => {
+const Roadmap = () => {
 	// -------------------------------------------------
 	// Properties
 	// -------------------------------------------------
 
 	// hooks
-	const _ = useLocalization("views");
-	
+	const _ = useLocalization("roadmap");
+
 	// -------------------------------------------------
 	// Render
 	// -------------------------------------------------
 
 	return (
-		<>
-			<h1>{_("VIEWS")}</h1>
+		<div class="container">
+			<h1>{_("ROADMAP")}</h1>
+
 			<p>{_("TEXT_01")}</p>
-		</>
+		</div>
 	);
 };
 
-export default Views;
+export default Roadmap;

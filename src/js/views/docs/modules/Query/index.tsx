@@ -1,6 +1,6 @@
 // Containers
 import Highlight	from "../../../../components/Highlight";
-import Navbar 		from "../../../../containers/Navbar";
+import Sidebar 		from "../../../../containers/Sidebar";
 
 // Modules
 import useLocalization from "../../../../modules/Localization";
@@ -18,7 +18,8 @@ const Query = () => {
 	// -------------------------------------------------
 
 	return (
-		<Navbar title={_("QUERY")}>
+		<>
+			<h1>{_("QUERY")}</h1>
 
 			<p>{_("TEXT_01")}</p>
 
@@ -116,7 +117,7 @@ import query from "@acai/query";
 await query().table("people").where("id", 5).delete();
 `}
 			</Highlight>
-		</Navbar>
+		</>
 	);
 };
 

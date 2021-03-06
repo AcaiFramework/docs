@@ -15,5 +15,10 @@
 	"CONFIG": "Config",
 	"SERVER": "Server",
 	"QUERY": "Query",
-	"CREATED_BY": "This framework was created by APO Softworks and Nuinalp LTDA."
+	"CREATED_BY": "This framework was created by APO Softworks and Nuinalp LTDA.",
+	"HOME": "Home",
+	"ABOUT": "About",
+	"ROADMAP": "Roadmap",
+	"DOC": "Docs",
+	"CONTACT": "Contact"
 }

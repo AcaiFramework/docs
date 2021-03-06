@@ -1,6 +1,6 @@
 // Containers
 import Highlight	from "../../../../components/Highlight";
-import Navbar 		from "../../../../containers/Navbar";
+import Sidebar 		from "../../../../containers/Sidebar";
 
 // Modules
 import useLocalization from "../../../../modules/Localization";
@@ -18,7 +18,8 @@ const Tester = () => {
 	// -------------------------------------------------
 
 	return (
-		<Navbar title={_("TESTER")}>
+		<>
+			<h1>{_("TESTER")}</h1>
 			<p>{_("TEXT_01")}</p>
 
 			<h3>{_("TITLE_01")}</h3>
@@ -92,7 +93,7 @@ test("other test description", () => {
 await test.run(["tag2"]);
 `}
 			</Highlight>
-		</Navbar>
+		</>
 	);
 };
 

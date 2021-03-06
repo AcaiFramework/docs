@@ -1,0 +1,25 @@
+.container {
+	min-height: 95vh;
+
+	display: flex;
+	align-items: center;
+
+	> * {
+		width: 100%;
+	}
+
+	h1 {
+		margin: 0;
+	}
+
+	.left * {
+		text-align: right;
+	}
+
+	.right {
+		padding-left: 40px;
+
+		display: flex;
+		align-items: center;
+	}
+}

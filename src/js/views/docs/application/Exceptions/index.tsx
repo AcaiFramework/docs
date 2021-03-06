@@ -1,6 +1,6 @@
 // Containers
 import Highlight	from "../../../../components/Highlight";
-import Navbar 		from "../../../../containers/Navbar";
+import Sidebar 		from "../../../../containers/Sidebar";
 
 // Modules
 import useLocalization from "../../../../modules/Localization";
@@ -18,7 +18,8 @@ const Exceptions = () => {
 	// -------------------------------------------------
 
 	return (
-		<Navbar title={_("EXCEPTIONS")}>
+		<>
+			<h1>{_("EXCEPTIONS")}</h1>
 			<div class="alert alert-primary">{_("TEXT_01")}</div>
 
 			<p>{_("TEXT_02")}</p>
@@ -29,14 +30,21 @@ import { response }			from "@acai/server";
 import { CustomException } 	from "@acai/utils";
 
 export default class ModelException extends CustomException {
+	// ${_("COMMENT_01")}
+	public readonly shouldReport = false;
+
 	public constructor (model, id) {
+		super("modelNotFound", \`Model \${this.model.name} of primary key \${this.primaryKey} not found\`);
+
 		this.model		= model;
 		this.primaryKey	= id;
+	}
 
-		super("modelNotFound", \`Model \${this.model.name} of primary key \${this.primaryKey} not found\`);
-	} 
+	public async report (request: AppRequest) {
+		/* ${_("COMMENT_02")} */
+	}
 
-	public render (request: ApplicationRequest) {
+	public render (request: AppRequest) {
 		if (request.headers.Accept === "application/json") {
 			return response({
 				data: {message: this.message},
@@ -57,7 +65,7 @@ export default class ModelException extends CustomException {
 			<div class="alert alert-secondary">{_("TEXT_04")}</div>
 
 			<p>{_("TEXT_05")}</p>
-		</Navbar>
+		</>
 	);
 };
 

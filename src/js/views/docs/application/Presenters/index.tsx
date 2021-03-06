@@ -1,6 +1,6 @@
 // Containers
 import Highlight	from "../../../../components/Highlight";
-import Navbar 		from "../../../../containers/Navbar";
+import Sidebar 		from "../../../../containers/Sidebar";
 
 // Modules
 import useLocalization from "../../../../modules/Localization";
@@ -18,7 +18,8 @@ const Presenters = () => {
 	// -------------------------------------------------
 
 	return (
-		<Navbar title={_("PRESENTERS")}>
+		<>
+			<h1>{_("PRESENTERS")}</h1>
 			<div class="alert alert-primary">{_("TEXT_01")}</div>
 
 			<p>{_("TEXT_02")}</p>
@@ -95,7 +96,7 @@ export default class UserPresenter extends Presenter {
 console.log(UserPresenter.present(/* data here */, {}, "customFormat"));
 `}
 			</Highlight>
-		</Navbar>
+		</>
 	);
 };
 

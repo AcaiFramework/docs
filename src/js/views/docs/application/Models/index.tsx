@@ -1,6 +1,6 @@
 // Containers
 import Highlight	from "../../../../components/Highlight";
-import Navbar 		from "../../../../containers/Navbar";
+import Sidebar 		from "../../../../containers/Sidebar";
 
 // Modules
 import useLocalization from "../../../../modules/Localization";
@@ -18,7 +18,8 @@ const Models = () => {
 	// -------------------------------------------------
 
 	return (
-		<Navbar title={_("MODELS")}>
+		<>
+			<h1>{_("MODELS")}</h1>
 			<p>{_("TEXT_01")}</p>
 
 			<Highlight language="typescript">
@@ -110,6 +111,46 @@ await User.query().where("name", "John").limit(5).orderBy("name", "DESC").get();
 
 			<p>{_("TYPE_05")}</p>
 
+			<h5>bigInt</h5>
+
+			<p>{_("TYPE_06")}</p>
+
+			<h5>dateTime</h5>
+
+			<p>{_("TYPE_07")}</p>
+
+			<h5>time</h5>
+
+			<p>{_("TYPE_08")}</p>
+
+			<h5>timestamp</h5>
+
+			<p>{_("TYPE_09")}</p>
+
+			<h5>id</h5>
+
+			<p>{_("TYPE_10")}</p>
+
+			<h5>sid</h5>
+
+			<p>{_("TYPE_11")}</p>
+
+			<h5>uuid</h5>
+
+			<p>{_("TYPE_12")}</p>
+
+			<h5>text</h5>
+
+			<p>{_("TYPE_13")}</p>
+
+			<h5>json</h5>
+
+			<p>{_("TYPE_14")}</p>
+
+			<h5>hash</h5>
+
+			<p>{_("TYPE_15")}</p>
+
 			<h3>{_("TITLE_06")}</h3>
 
 			<p>{_("TEXT_08")}</p>
@@ -144,7 +185,7 @@ typeManager.add("customTypeName", {
 });
 `}
 			</Highlight>
-		</Navbar>
+		</>
 	);
 };
 
