@@ -10,7 +10,7 @@ const Roadmap = () => {
 	// -------------------------------------------------
 
 	// hooks
-	const _ = useLocalization("roadmap");
+	const _ = useLocalization("general.roadmap");
 
 	// -------------------------------------------------
 	// Render

@@ -10,7 +10,7 @@ const Loading = () => {
 	// -------------------------------------------------
 
 	// hooks
-	const _ = useLocalization("general");
+	const _ = useLocalization("general.general");
 	
 	// -------------------------------------------------
 	// Render

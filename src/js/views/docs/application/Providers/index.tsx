@@ -1,6 +1,5 @@
 // Containers
 import Highlight	from "../../../../components/Highlight";
-import Sidebar 		from "../../../../containers/Sidebar";
 
 // Modules
 import useLocalization from "../../../../modules/Localization";
@@ -11,7 +10,7 @@ const Providers = () => {
 	// -------------------------------------------------
 
 	// hooks
-	const _ = useLocalization("providers");
+	const _ = useLocalization("docs.application.providers");
 	
 	// -------------------------------------------------
 	// Render

@@ -69,7 +69,19 @@ const App = () => {
 							<AsyncRoute
 								path="/docs/:version/app/models"
 								loading={Loading}
-								getComponent={() => import("../../views/docs/application/Models").then(module => module.default)}
+								getComponent={() => import("../../views/docs/model/Introduction").then(module => module.default)}
+							/>
+
+							<AsyncRoute
+								path="/docs/:version/app/models/relationships"
+								loading={Loading}
+								getComponent={() => import("../../views/docs/model/Relationships").then(module => module.default)}
+							/>
+
+							<AsyncRoute
+								path="/docs/:version/app/models/types"
+								loading={Loading}
+								getComponent={() => import("../../views/docs/model/Types").then(module => module.default)}
 							/>
 
 							<AsyncRoute

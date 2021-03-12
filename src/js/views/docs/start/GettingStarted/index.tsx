@@ -13,7 +13,7 @@ const Home = () => {
 	// -------------------------------------------------
 
 	// hooks
-	const _ = useLocalization("start");
+	const _ = useLocalization("docs.general.start");
 
 	// -------------------------------------------------
 	// Render

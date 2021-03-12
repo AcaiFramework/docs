@@ -10,7 +10,7 @@ const Controllers = () => {
 	// -------------------------------------------------
 
 	// hooks
-	const _ = useLocalization("controllers");
+	const _ = useLocalization("docs.application.controllers");
 	
 	// -------------------------------------------------
 	// Render

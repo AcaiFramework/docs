@@ -11,7 +11,7 @@ const NotFound = (props: Props) => {
 	// -------------------------------------------------
 
 	// hooks
-	const _ = useLocalization("general");
+	const _ = useLocalization("general.general");
 	
 	// -------------------------------------------------
 	// Render

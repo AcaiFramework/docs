@@ -1,14 +1,16 @@
 .navbar {
 	display: flex;
+
+	> * {
+		display: flex;
+	}
 }
 
 .links {
 	display: flex;
 	flex-direction: column;
 
-	left: 20px;
-
-	position: absolute;
+	margin-top: 50px;
 
 	a {
 		color: black;

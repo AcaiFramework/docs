@@ -1,6 +1,5 @@
 // Containers
 import Highlight	from "../../../../components/Highlight";
-import Sidebar 		from "../../../../containers/Sidebar";
 
 // Modules
 import useLocalization from "../../../../modules/Localization";
@@ -11,7 +10,7 @@ const Router = () => {
 	// -------------------------------------------------
 
 	// hooks
-	const _ = useLocalization("router");
+	const _ = useLocalization("docs.modules.router");
 	
 	// -------------------------------------------------
 	// Render

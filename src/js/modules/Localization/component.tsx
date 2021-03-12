@@ -27,7 +27,8 @@ const Localization = ({ children, language }: Props) => {
 
 	const translate = useCallback(
 		(category?: string) => {
-			return import(`../../../localization/${currentlang}/${`${category}.json` || "index.json"}`)
+			console.log(`../../../localization/${currentlang}/${(`${category}` || "index").replaceAll(".", "/")}.json`);
+			return import(/* @vite-ignore */ `../../../localization/${currentlang}/${(`${category}` || "index").replaceAll(".", "/")}.json`)
 				.then(response => {
 					return response.default;
 				})

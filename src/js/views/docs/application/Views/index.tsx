@@ -1,6 +1,3 @@
-// Containers
-import Sidebar 		from "../../../../containers/Sidebar";
-
 // Modules
 import useLocalization from "../../../../modules/Localization";
 
@@ -10,7 +7,7 @@ const Views = () => {
 	// -------------------------------------------------
 
 	// hooks
-	const _ = useLocalization("views");
+	const _ = useLocalization("docs.application.views");
 	
 	// -------------------------------------------------
 	// Render

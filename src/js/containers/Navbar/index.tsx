@@ -11,6 +11,7 @@ import useLocalization from "../../modules/Localization";
 
 // Image
 import logo from "../../../img/logo.svg";
+import Wave from "../../components/Wave";
 
 const Navbar = (props: NavbarPropsInterface) => {
 	// -------------------------------------------------
@@ -18,7 +19,7 @@ const Navbar = (props: NavbarPropsInterface) => {
 	// -------------------------------------------------
 
 	// hooks
-	const _ = useLocalization("links");
+	const _ = useLocalization("general.links");
 
 	// -------------------------------------------------
 	// Render
@@ -44,11 +45,13 @@ const Navbar = (props: NavbarPropsInterface) => {
 					</div>
 				</nav>
 				
-				<div class="comein">
+				<div class="comein" style={{minHeight:"80vh", marginBottom: "-15vh"}}>
 					{props.children}
 				</div>
 
-				<div class="d-flex flex-column justify-content-center align-items-center">
+				<Wave margin={0} color="white" />
+
+				<div class="d-flex flex-column justify-content-center align-items-center bg-white">
 					<img src={logo} width="30" height="30" class="d-inline-block align-top mt-5" alt="Açaí framework logo" />
 					<footer class="text-center py-4">{_("CREATED_BY")}</footer>
 				</div>

@@ -1,9 +1,10 @@
 {
 	"TITLE": "Simply delicious",
 	"SHORT_DESCRIPTION": "Açaí is a framework that focuses on simplicity and extensebility, enabling you to work fast and build amazing application with incredible ease.",
-	"DESCRIPTION": "Açaí is a framework that focuses on simplicity and extensebility",
+	"DESCRIPTION": "Focused on being a easy to understand and fast to master. Açai.JS brings everything you like to the mix: extensions, freedom, speed and perfomance",
 	"GETTING_STARTED": "Get started now",
 	"ABOUT": "About",
 	"FEATURES": "Features",
-	"FEATURES_DESCRIPTION": "Bla bla blah"
+	"FEATURES_DESCRIPTION": "Bla bla blah",
+	"DOWNLOADS": "people downloaded our packages already"
 }
